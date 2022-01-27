@@ -21,7 +21,7 @@ class Particle {
         Math.sin(this.position)*this.moveRadius + canvas.height/2,
         this.size, 0, Math.PI*2);
         ctx.closePath();
-        ctx.strokeStyle = "green";
+        ctx.strokeStyle = "yellow";
         ctx.stroke();
     }
     update(){
