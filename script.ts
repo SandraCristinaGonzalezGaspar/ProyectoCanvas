@@ -21,7 +21,7 @@ class Particle {
         Math.sin(this.position)*this.moveRadius + canvas.height/2,
         this.size, 0, Math.PI*2);
         ctx.closePath();
-        ctx.strokeStyle = "yellow";
+        ctx.strokeStyle = "pink";
         ctx.stroke();
     }
     update(){
@@ -31,7 +31,7 @@ class Particle {
 }
 function init(){
     particleArray = [];
-    for(let i=0; i<50; i++){
+    for(let i=0; i<500; i++){
         let moveRadius = Math.random() * canvas.width;
         let step = (Math.random() *0.002) + 0.002;
         let position = Math.random() * (Math.PI * 2);
